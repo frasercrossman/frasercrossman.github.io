@@ -1,0 +1,90 @@
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  cursor: default;
+}
+header * {
+  cursor: default;
+  font-size:12px;
+  font-family: helvetica;
+}
+
+header h1 {
+  flex: 0 0 auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header a[href] {
+  color: inherit;
+  background: none;
+  text-shadow: none;
+}
+
+header a[href]:hover {
+  color: black;
+  background: none;
+}
+
+header h1 a[href] {
+  display: block;
+}
+
+header h1 a[href]:hover {
+  cursor:pointer;
+}
+
+header h1 img {
+  cursor:pointer;
+  height: 32px;
+  width: 32px;
+  display:block;
+  border-radius: 50%;
+}
+
+header ul {
+  flex: 0 0 auto;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  opacity: 1;
+}
+
+header.main ul, header:hover ul {
+  opacity: 1;
+}
+
+header ul li {
+  list-style: none;
+  margin:0; padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header ul li a[href] {
+  cursor: pointer;
+  padding: 0 0.8em;
+  color: black;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+}
+
+header ul li:last-child a[href] {
+  padding-right:0;
+}
+
+header ul li a[href]:hover {
+  color: black;
+  text-decoration: none;
+}
+
+header ul li a[href].active {
+  color:black;
+  font-weight:bold;
+}

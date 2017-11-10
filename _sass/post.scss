@@ -1,0 +1,22 @@
+div .post {
+  padding-bottom: 0em;
+  page-break-before: always;
+}
+
+div .post.single, div.post:last-child {
+  border-bottom:none;
+}
+
+div .post actions, div.post info {
+  color: #ccc;
+}
+
+div .post actions {
+  background: blue;
+  display:inline-block;
+  float:right;
+}
+
+div .post info {
+  display:block;
+}

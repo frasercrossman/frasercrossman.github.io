@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------------------------------------- */
+/* main content */
+div.content {
+  background: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.content:not(.sub) h1:first-child {
+  margin-top:0;
+}
+
+div.content *[align="right"] {
+  margin:0 0 1em 1.5em;
+}
+
+div.content *[align="left"] {
+  margin:0 1.5em 1em 0;
+}
+
+div.content li {
+  margin-left: 2em;
+  margin-bottom:0.2em;
+}
+
+div.content ul > li {
+  margin-left:1.4em;
+}
+
+div.content ul.minimal {
+  list-style:none;
+}
+
+div.content ul.minimal > li {
+  margin-left:0;
+}
+
+div.content blockquote {
+  border-left:4px solid #ddd;
+  padding:0 0 0 20px;
+  color: #777;
+  text-rendering: optimizelegibility;
+}
+
+div.content div.quotation blockquote {
+  margin-left:-30px;
+}
+
+div.content code {
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+div.content code {
+  padding:3px 0;
+}
+div.content code::before,
+div.content code::after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+div.content center {
+  margin:2em 0;
+  user-select:none;
+  cursor: default;
+  color: #ccc;
+}
