@@ -1,3 +1,11 @@
+# Generated site
 _site/
+
+# Enhanced stylesheet cache
 .sass-cache
+
+# Incremental build metadata
 .jekyll-metadata
+
+# Webstorm project folder
+.idea/
