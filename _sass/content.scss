@@ -46,9 +46,29 @@ div.content div.quotation blockquote {
   margin-left:-30px;
 }
 
+div.content center {
+  margin:2em 0;
+  user-select:none;
+  cursor: default;
+  color: #ccc;
+}
+
+div.content pre,
 div.content code {
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
+}
+
+div.content pre > code {
+  /*background-color: none;*/
+  border-radius: 0;
+}
+
+div.content pre {
+  line-height:1.25;
+  overflow-x: auto;
+  color: #333;
+  padding:16px;
 }
 
 div.content code {
@@ -60,9 +80,13 @@ div.content code::after {
   content: "\00a0";
 }
 
-div.content center {
-  margin:2em 0;
-  user-select:none;
-  cursor: default;
-  color: #ccc;
+div.content pre > code {
+  padding:0;
+  background-color:transparent;
+  /*border-radius: none; */
+}
+div.content pre > code::before,
+div.content pre > code::after {
+  letter-spacing: inherit;
+  content: none;
 }
