@@ -10,10 +10,9 @@ layout: default
         <h3 class="text">{{ post.title }}</h3>
         <div class="body">
           <p>
-            <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-              {{ post.date | date: "%b %Y" }}
-            </info>
-	    {% if post.description %}
+            {{ post.date | date: "%b %Y" }}
+
+	        {% if post.description %}
               {{ post.description | markdownify | strip_html }}
             {% else %}
               {{ post.excerpt | strip_html }}
