@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>Articles</h1>
+<div class="content">
+    <div class="posts">
+        {% for post in site.posts limit:5 %}
+        <a href="{{ post.url }}" class="post-excerpt">
+            <div class="c">
+                <p class="text">{{ post.date | date: "%Y-%m-%d" }} >> {{ post.title }}</p>
+            </div>
+        </a>
+        {% endfor %}
+        <div class="breaker"></div>
+        <div class="end"></div>
+    </div>
+</div>
