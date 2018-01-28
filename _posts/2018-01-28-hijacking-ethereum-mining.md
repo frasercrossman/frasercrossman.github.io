@@ -23,25 +23,25 @@ sophisticated miners of this type are optimised so aggressively for their purpos
 assumed to be correct, unchecked leaving them open for attack.
 
 The source code for the [Mirai malware][1] that infected IoT devices with incredible success in 2016 was released and has
-since been modified by many hackers for their own purposes. [Satori][2] is one such fork. NetLab360 first identified and
-named the fork. Since their initial identification of devices infected with Satori, the security community was able
-to sinkhole the botnet and hamper further infection of devices. The threat persisted however as it was only a matter of
-time before further forks would be discovered in the wild.
+since been modified by many hackers for their own purposes. [Satori][2] (Japanese for Enlightenment) is one such fork.
+NetLab360 first identified and named the fork. Since their initial identification of devices infected with Satori, the
+security community was able to sinkhole the botnet and hamper further infection of devices. The threat persisted however
+as it was only a matter of time before further forks would be discovered in the wild.
 
-Another variant of Satori as since emerged, aptly named [Satori.Coin.Robber][3] by NetLab360. The malware seeks to
+Another variant of Satori has since emerged, aptly named [Satori.Coin.Robber][3] by NetLab360. The malware seeks to
 connect to devices running the [Claymore Miner software][4] used to mine the Ethereum cryptocurrency. The mining
 software provides a management facility through port 3333 which by default requires no authentication. This is a known
 issue, [CVE-2017-16929][5], and Python source code that exploits the issue has since been [disclosed][6].
 
-If an unprotected miner is discovered the Satori.Coin.Robber malware will attempt to replace the wallet address used to
+If an unprotected miner is discovered, the Satori.Coin.Robber malware will attempt to replace the wallet address used to
 store mined Ether with its own wallet address. As of this writing an [account][7] has received three payments from
 compromised miners, amounting to 2.796 Ether which equates to roughly $3.5K.
 
 This vulnerability will undoubtedly be fixed however, basic security practices must still be carried out to ensure that
 the appropriate patches are applied and in a timely manner. In this case, compromised devices were improperly
 configured and were therefore vulnerable. This is an alarming fact given that the owner of the miner benefits directly
-from the security of their miner, and yet they have neglected it. Many services on the web do not and yet we expect
-that they are appropriately secured.
+from the security of their miner, and yet they have neglected it. Many services on the web do not provide such financial
+incentives to their owners and yet we naively expect that they are appropriately secured.
 
 [1]: https://en.wikipedia.org/wiki/Mirai_(malware)
 [2]: http://blog.netlab.360.com/warning-satori-a-new-mirai-variant-is-spreading-in-worm-style-on-port-37215-and-52869-en/
