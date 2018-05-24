@@ -6,10 +6,13 @@ header {
   -webkit-flex: 0 0 auto;
 
   display: flex;
+
   justify-content: space-between;
-  height: 100px;
+  height: 50px;
+  margin: 0px 20px;
   cursor: default;
 }
+
 header * {
   cursor: default;
   font-size:12px;
