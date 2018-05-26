@@ -1,5 +1,6 @@
 # Site settings
 title: Fraser Crossman
+author: Fraser Crossman
 email: fraser (dot) crossman (at) domain (dot) com
 description: Hopefully, interesting stuff.
 url: "https://www.frasercrossman.com"
@@ -36,7 +37,8 @@ unpublished: false
 
 # Plugins
 whitelist: []
-plugins:   []
+plugins:
+  - jekyll-feed
 
 # Conversion
 markdown:    kramdown
