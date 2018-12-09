@@ -6,7 +6,7 @@ description: "How Ethereum Miners are being hacked!"
 During 2017, public attention turned to the money-crazed frenzy surrounding Bitcoin. Browser-based cryptocurrency
 mining became a significant concern amongst many as malicious sites attempted to run JavaScript miners in the
 user’s browser at their expense. Successful mining of any cryptocurrency depends principally on hash rate; a metric
-difficult to maximise with JavaScript. This incredible searge in public attention in cryptocurrencies fueled monstrous
+difficult to maximise with JavaScript. This incredible surge in public attention in cryptocurrencies fueled monstrous
 growth in their value, incentivising evermore nefarious and ingenious ways of mining for profit.
 
 Another emerging trend that we can expect to see accelerate in 2018 is the prolific growth and effects of botnets.
