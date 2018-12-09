@@ -10,15 +10,15 @@ difficult to maximise with JavaScript. This incredible surge in public attention
 growth in their value, incentivising evermore nefarious and ingenious ways of mining for profit.
 
 Another emerging trend that we can expect to see accelerate in 2018 is the prolific growth and effects of botnets.
-As more and more, poorly secured, devices connect to the public Internet the possibilities for large scale attacks
+As more and more, poorly secured, devices connect to the public Internet the possibilities for large-scale attacks
 become progressively more likely and dangerous. Botnets have been around for decades though, infecting vulnerable
 computers and using them to launch DDOS attacks, store illegal material, send spam emails, and more. The sheer
 scale of this new breed of botnet is what makes them so formidable and will prove to be a serious threat to public
 infrastructure.
 
-The financial incentive to infect devices for the purposes of cryptocurrency mining are clear. Mining is typically the
+The financial incentive to infect devices for the purposes of cryptocurrency mining is clear. Mining is typically the
 preserve of bespoke machines that are specifically built for their purpose and use high-end GPUs to bolster their hash
-rate. Infecting a network of miners of this type would therefore have huge monetary value to an attacker. As
+rate. Infecting a network of miners of this type would, therefore, have huge monetary value to an attacker. As
 sophisticated miners of this type are optimised so aggressively for their purpose they will often leave parameters,
 assumed to be correct, unchecked leaving them open for attack.
 
@@ -34,7 +34,7 @@ software provides a management facility through port 3333 which by default requi
 issue, [CVE-2017-16929][5], and Python source code that exploits the issue has since been [disclosed][6].
 
 If an unprotected miner is discovered, the Satori.Coin.Robber malware will attempt to replace the wallet address used to
-store mined Ether with its own wallet address. As of this writing an [account][7] has received three payments from
+store mined Ether with its own wallet address. As of this writing, an [account][7] has received three payments from
 compromised miners, amounting to 2.796 Ether which equates to roughly $3.5K.
 
 This vulnerability will undoubtedly be fixed however, basic security practices must still be carried out to ensure that
