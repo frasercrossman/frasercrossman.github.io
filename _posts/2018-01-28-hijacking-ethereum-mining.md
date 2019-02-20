@@ -31,10 +31,10 @@ as it was only a matter of time before further forks would be discovered in the 
 Another variant of Satori has since emerged, aptly named [Satori.Coin.Robber][3] by NetLab360. The malware seeks to
 connect to devices running the [Claymore Miner software][4] used to mine the Ethereum cryptocurrency. The mining
 software provides a management facility through port 3333 which by default requires no authentication. This is a known
-issue, [CVE-2017-16929][5], and Python source code that exploits the issue has since been [disclosed][6].
+issue, [CVE-2017-16929][5], and Python source code that exploits the issue has since been disclosed.
 
 If an unprotected miner is discovered, the Satori.Coin.Robber malware will attempt to replace the wallet address used to
-store mined Ether with its own wallet address. As of this writing, an [account][7] has received three payments from
+store mined Ether with its own wallet address. As of this writing, an [account][6] has received three payments from
 compromised miners, amounting to 2.796 Ether which equates to roughly $3.5K.
 
 This vulnerability will undoubtedly be fixed however, basic security practices must still be carried out to ensure that
@@ -48,5 +48,4 @@ incentives to their owners and yet we naively expect that they are appropriately
 [3]: http://blog.netlab.360.com/art-of-steal-satori-variant-is-robbing-eth-bitcoin-by-replacing-wallet-address-en/
 [4]: https://github.com/nanopool/Claymore-Dual-Miner/releases
 [5]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16929
-[6]: https://www.exploit-db.com/exploits/43231/
-[7]: http://dwarfpool.com/eth/address?wallet=B15A5332eB7cD2DD7a4Ec7f96749E769A371572d&allpayouts=1
+[6]: http://dwarfpool.com/eth/address?wallet=B15A5332eB7cD2DD7a4Ec7f96749E769A371572d&allpayouts=1
