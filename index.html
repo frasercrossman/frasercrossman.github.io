@@ -1,30 +1,17 @@
 ---
 layout: default
-title: Fraser Crossman
+title: Fraser Crossman's Articles
 ---
 
 <div class="content">
-  <div class="posts">
-    {% for article in site.articles limit:5 %}
-    <a href="{{ article.url }}" class="post-excerpt">
-      <div class="c">
-        <h3 class="text">{{ article.title }}</h3>
-        <div class="body">
-          <p>
-            {{ article.date | date: "%b %Y" }}
+    <h1>Articles</h1>
 
-	        {% if article.description %}
-              {{ article.description | markdownify | strip_html }}
-            {% else %}
-              {{ article.excerpt | strip_html }}
-            {% endif %}
-          </p>
-        </div>
-      </div>
-    {% endfor %}
-    </a>
-    <div class="breaker"></div>
-    <div class="end"></div>
-  </div>
+    <div class="posts">
+        {% for article in site.articles %}
+
+        <span>{{ article.date | date_to_string }}</span> &raquo; <a href="{{ article.url }}">{{ article.title }}</a>
+
+        {% endfor %}
+    </div>
 </div>
 
