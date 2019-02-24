@@ -2,18 +2,78 @@
 layout: default
 ---
 
+<style>
+    .grid-container {
+        display: block;
+    }
+
+    .grid-element {
+        margin: 1%;
+
+        float: left;
+        width: 31%;
+
+        clear: none;
+    }
+
+    .grid-element:nth-child(3n+1) {
+        clear: left;
+    }
+
+    .grid-element-img-container {
+        padding-top: 100%;
+        position: relative;
+    }
+
+    .grid-element-img {
+        display: block;
+
+        width: 88%;
+        height: 88%;
+
+        margin: 6%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .grid-element-text {
+        margin: 0 6% 6%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        .grid-element {
+            width: 47%;
+        }
+
+        .grid-element:nth-child(odd) {
+            clear: left;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .grid-element {
+            width: 96%;
+        }
+    }
+</style>
+
 <div class="content">
     <h1>Projects</h1>
 
-    <div class="posts">
-        {% for post in site.posts limit:5 %}
-        <a href="{{ post.url }}" class="post-excerpt">
-            <div class="c">
-                <p class="text">{{ post.date | date: "%Y-%m-%d" }} >> {{ post.title }}</p>
-            </div>
-        </a>
+    <div class="grid-container">
+        {% for project in site.projects %}
+        <div class="grid-element">
+            <a href="{{ project.url }}">
+                <div class="grid-element-img-container">
+                    <img class="grid-element-img" src="{{ project.image_url }}">
+                </div>
+                <p class="grid-element-text">{{ project.title }}</p>
+            </a>
+        </div>
         {% endfor %}
-        <div class="breaker"></div>
-        <div class="end"></div>
     </div>
 </div>
