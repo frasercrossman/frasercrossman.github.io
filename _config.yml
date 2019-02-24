@@ -9,13 +9,14 @@ github_username:  frasercrossman
 # Where things are
 source:          .
 destination:     ./_site
-#collections_dir: ./
 plugins_dir:     _plugins
 layouts_dir:     _layouts
 data_dir:        _data
 includes_dir:    _includes
 collections:
-  posts:
+  articles:
+    output:   true
+  projects:
     output:   true
 sass:
   sass_dir: _sass/
