@@ -3,23 +3,34 @@ layout: default
 title: About
 ---
 
+<style>
+    #profile_image {
+        max-width:40%;
+        width:200px;
+        display:block;
+        float:left;
+        margin-right: 1rem;
+    }
+</style>
+
 <div class="content">
     <div class="post single">
         <h1>{{ page.title }}</h1>
 
         <div class="body">
-            <img src="images/running_profile.png" alt="Running Profile" style="border-radius:50%;max-width:300px;width:45%;display:block;margin-right:auto;margin-left:auto">
+            <img id="profile_image" src="images/running_profile.png" alt="Running Profile">
             <p>
-                I'm taking part in the London Marathon on Sunday 28th April 2019
-                supporting the charity <a href="https://raysofsunshine.org.uk/">Rays of Sunshine</a>.
-                You can help support them in their mission to help children with serious
-                or life-limiting illnesses by making a donation using the link below.
+                I'm a Computer Science graduate with particular interests in Ethereum, functional programming, and
+                startups. At the moment, as with many functional programming and startup enthusiasts, I'm
+                obsessed with <a href="http://www.paulgraham.com/articles.html">Paul Graham's essays</a>.
+                I can't recommend them enough to anyone who is currently or has just finished studying Computer Science
+                at university.
             </p>
-            <a href="https://uk.virginmoneygiving.com/FraserCrossman" target="_blank" title="Link opens in a new tab">
-                <img src="https://uk.virginmoneygiving.com/giving/Images/banners/261x88_donate2.png" border="0" alt="Make a donation using Virgin Money Giving" style="display:block;margin-left:auto;margin-right:auto;">
-            </a>
+            <p>
+                Outside of my technical interests I am a keen runner and will soon be taking part in both the Vitality
+                Big Half and the Virgin Money London Marathon. If you would like to sponsor me
+                <a href="/marathon.html">click here</a>.
+            </p>
         </div>
-
-        <div class="breaker"></div>
     </div>
 </div>
