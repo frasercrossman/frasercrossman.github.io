@@ -5,18 +5,18 @@ title: Fraser Crossman
 
 <div class="content">
   <div class="posts">
-    {% for post in site.posts limit:5 %}
-    <a href="{{ post.url }}" class="post-excerpt">
+    {% for article in site.articles limit:5 %}
+    <a href="{{ article.url }}" class="post-excerpt">
       <div class="c">
-        <h3 class="text">{{ post.title }}</h3>
+        <h3 class="text">{{ article.title }}</h3>
         <div class="body">
           <p>
-            {{ post.date | date: "%b %Y" }}
+            {{ article.date | date: "%b %Y" }}
 
-	        {% if post.description %}
-              {{ post.description | markdownify | strip_html }}
+	        {% if article.description %}
+              {{ article.description | markdownify | strip_html }}
             {% else %}
-              {{ post.excerpt | strip_html }}
+              {{ article.excerpt | strip_html }}
             {% endif %}
           </p>
         </div>
