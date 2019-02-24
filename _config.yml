@@ -82,6 +82,3 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
-
-# Google Analytics
-google_analytics: "UA-109633591-1"
