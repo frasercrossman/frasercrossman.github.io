@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "EVM Bounded Model Checking"
+title: "Bounded Model Checking of Ethereum Smart Contracts"
 description: "Using CBMC to perform bounded model checking on the EVM."
-image_url: https://static1.squarespace.com/static/53c9cdf3e4b0669c8d19e691/t/55dcbf0ae4b060f2f843df01/1440530210986/extrusions+small.png?format=500w
+image_url: /images/ethereum_logo.svg
 ---
-
-How can you do bounded model checking on the EVM!?
+This project was the basis of my undergraduate dissertation. I would like to extend it into a fully-fledged IDE for
+developing smart contracts.
