@@ -1,10 +1,10 @@
 /* ------------------------------------------------------------------------------------------- */
 /* main content */
 div.content {
-  flex: 1 0 0; /* expand to fill space */
-  box-flex: 1 0 0;
-  -ms-flex: 1 0 0;
-  -webkit-flex: 1 0 0;
+  flex: 1 0 auto; /* expand to fill space */
+  box-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
 
   background: white;
   margin: 0px 16px;
