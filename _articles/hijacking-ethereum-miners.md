@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "Hijacking Ethereum Mining"
+title: "Hijacking Ethereum Miners"
 description: "How Ethereum Miners are being hacked!"
+date: "28-01-2018"
 ---
 During 2017, public attention turned to the money-crazed frenzy surrounding Bitcoin. Browser-based cryptocurrency
 mining became a significant concern amongst many as malicious sites attempted to run JavaScript miners in the
