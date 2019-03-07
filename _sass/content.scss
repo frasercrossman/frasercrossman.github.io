@@ -1,58 +1,54 @@
-/* ------------------------------------------------------------------------------------------- */
-/* main content */
 div.content {
   flex: 1 0 auto; /* expand to fill space */
   box-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   -webkit-flex: 1 0 auto;
-
-  background: white;
-  margin: 0px 16px;
 }
 
+/* styling for generated article */
 div.content:not(.sub) h1:first-child {
-  margin-top:0;
+  margin-top: 0;
 }
 
 div.content *[align="right"] {
-  margin:0 0 1em 1.5em;
+  margin: 0 0 1em 1.5em;
 }
 
 div.content *[align="left"] {
-  margin:0 1.5em 1em 0;
+  margin: 0 1.5em 1em 0;
 }
 
 div.content li {
   margin-left: 2em;
-  margin-bottom:0.2em;
+  margin-bottom: 0.2em;
 }
 
 div.content ul > li {
-  margin-left:1.4em;
+  margin-left: 1.4em;
 }
 
 div.content ul.minimal {
-  list-style:none;
+  list-style: none;
 }
 
 div.content ul.minimal > li {
-  margin-left:0;
+  margin-left: 0;
 }
 
 div.content blockquote {
-  border-left:4px solid #ddd;
-  padding:0 0 0 20px;
+  border-left: 4px solid #ddd;
+  padding: 0 0 0 20px;
   color: #777;
   text-rendering: optimizelegibility;
 }
 
 div.content div.quotation blockquote {
-  margin-left:-30px;
+  margin-left: -30px;
 }
 
 div.content center {
-  margin:2em 0;
-  user-select:none;
+  margin: 2em 0;
+  user-select: none;
   cursor: default;
   color: #ccc;
 }
@@ -63,20 +59,15 @@ div.content code {
   border-radius: 3px;
 }
 
-div.content pre > code {
-  /*background-color: none;*/
-  border-radius: 0;
-}
-
 div.content pre {
-  line-height:1.25;
+  line-height: 1.25;
   overflow-x: auto;
   color: #333;
-  padding:16px;
+  padding: 16px;
 }
 
 div.content code {
-  padding:3px 0;
+  padding: 3px 0;
 }
 div.content code::before,
 div.content code::after {
@@ -86,9 +77,10 @@ div.content code::after {
 
 div.content pre > code {
   padding:0;
-  background-color:transparent;
-  /*border-radius: none; */
+  background-color: transparent;
+  border-radius: 0;
 }
+
 div.content pre > code::before,
 div.content pre > code::after {
   letter-spacing: inherit;

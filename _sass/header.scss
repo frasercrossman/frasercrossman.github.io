@@ -1,98 +1,58 @@
-/* header */
 header {
+  height: 4.5em;
+  justify-content: space-between;
+
+  /* display: flex; all-support */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
   flex: 0 0 auto; /* expand to fill space */
   box-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
-
-  display: flex;
-
-  justify-content: space-between;
-  height: 50px;
-  margin: 0 20px;
-  cursor: default;
-}
-
-header * {
-  cursor: default;
-  font-size: 14px;
-  font-family: sans-serif;
 }
 
 header h1 {
-  flex: 0 0 auto;
   margin: 0;
+  justify-content: center;
+
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-header a[href] {
-  color: inherit;
-  background: none;
-  text-shadow: none;
-}
-
-header a[href]:hover {
-  color: black;
-  background: none;
-}
-
-header h1 a[href] {
-  display: block;
-}
-
-header h1 a[href]:hover {
-  cursor:pointer;
 }
 
 header h1 img {
-  cursor:pointer;
   height: 32px;
   width: 32px;
+
   display: block;
+
   border-radius: 50%;
 }
 
 header ul {
-  flex: 0 0 auto;
   margin: 0;
   text-align: left;
-  display: flex;
-  opacity: 1;
-}
 
-header.main ul, header:hover ul {
-  opacity: 1;
+  flex: 0 0 auto;
+  display: flex;
 }
 
 header ul li {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  margin:0; padding:0;
+  justify-content: center;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 header ul li a[href] {
-  cursor: pointer;
-  padding: 0 0.8em;
   color: black;
+  padding-left: 1.6em;
   text-decoration: none;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-}
-
-header ul li:last-child a[href] {
-  padding-right:0;
-}
-
-header ul li a[href]:hover {
-  color: black;
-  text-decoration: none;
-}
-
-header ul li a[href].active {
-  color:black;
-  font-weight:bold;
 }
