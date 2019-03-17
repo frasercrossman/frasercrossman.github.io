@@ -25,12 +25,12 @@ body {
   line-height: 1.5;
 
   width: 100%;
-  max-width: 720px;
+  max-width: 50em;
 
   min-height: 100vh;
   height: 100%; /* browser support */
 
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 
   /* text legability; all-support */
   -webkit-text-size-adjust: 100%;
