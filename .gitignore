@@ -7,5 +7,6 @@ _site/
 # Incremental build metadata
 .jekyll-metadata
 
-# Webstorm project folder
+# Intellij project folder
 .idea/
+*.iml
