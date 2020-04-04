@@ -10,6 +10,9 @@
     {% feed_meta %}
 
     <link rel="stylesheet" media="screen" href="/css/main.css" type="text/css">
+    {% for item in page.custom_css %}
+    <link rel="stylesheet" media="screen" href="/css/{{ item }}.css" type="text/css">
+    {% endfor %}
 </head>
 <body>
     {% include header.html %}

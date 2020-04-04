@@ -1,0 +1,59 @@
+---
+---
+.grid-container {
+  display: block;
+}
+
+.grid-element {
+  margin: 1%;
+
+  float: left;
+  width: 31%;
+
+  clear: none;
+}
+
+.grid-element:nth-child(3n+1) {
+  clear: left;
+}
+
+.grid-element-img-container {
+  padding-top: 100%;
+  position: relative;
+}
+
+.grid-element-img {
+  display: block;
+
+  width: 88%;
+  height: 88%;
+
+  margin: 6%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.grid-element-text {
+  margin: 0 6% 6%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .grid-element {
+    width: 47%;
+  }
+
+  .grid-element:nth-child(odd) {
+    clear: left;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-element {
+    width: 96%;
+  }
+}
