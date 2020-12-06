@@ -6,17 +6,15 @@
   padding:0;
 }
 
+@font-face { font-family: 'IBMPlexSans';                     src: url('../fonts/IBMPlexSans-Text.woff') format('woff'); }
+@font-face { font-family: 'IBMPlexSans'; font-style: italic; src: url('../fonts/IBMPlexSans-TextItalic.woff') format('woff'); }
+@font-face { font-family: 'IBMPlexSans'; font-weight: 800;   src: url('../fonts/IBMPlexSans-Bold.woff') format('woff'); }
+
 html {
   height: 100%;
 
-  font-size: 14px;
-  font-family: sans-serif;
-}
-
-@media (max-width: 623px) {
-  html {
-    font-size: 16px;
-  }
+  font-size: 16px;
+  font-family: IBMPlexSans, sans-serif;
 }
 
 body {
@@ -25,14 +23,14 @@ body {
   line-height: 1.5;
 
   width: 100%;
-  max-width: 50em;
+  max-width: 35em;
 
   min-height: 100vh;
   height: 100%; /* browser support */
 
   margin: 0 auto 0 auto;
 
-  /* text legability; all-support */
+  /* text legibility; all-support */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-smoothing: subpixel-antialiased;

@@ -1,14 +1,33 @@
 ---
 ---
 #profile_image {
+  border-radius: 2.5%;
+  border: 1px solid #3e3e3e;
   max-width:40%;
-  width:200px;
+  width:190px;
   display:block;
   float:left;
-  margin-right:1rem;
+  margin:0 1rem 0.5rem 0;
 }
 
 #profile_text {
   display:block;
   float:none;
+}
+
+@media (max-width: 550px) {
+  #top-line-break {
+    content: " ";
+    display: none;
+  }
+
+  #profile_image {
+    max-width:90%;
+    float:none;
+    margin:0 auto 0.5rem auto;
+  }
+
+  #profile_text {
+    float:left;
+  }
 }
