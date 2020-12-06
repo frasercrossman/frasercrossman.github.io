@@ -7,9 +7,10 @@ title: Articles - Fraser Crossman
     <h1>Articles</h1>
 
     <div>
-        {% for article in site.articles %}
+        {% assign articles = site.articles | sort: 'date' | reverse %}
+        {% for article in articles %}
         <div>
-            <span>{{ article.date | date_to_string }}</span> &raquo; <a href="{{ article.url }}">{{ article.title }}</a>
+            <span style="font-family: monospace">{{ article.date | date_to_string }}</span> &raquo; <a href="{{ article.url }}">{{ article.title }}</a>
         </div>
         {% endfor %}
     </div>
