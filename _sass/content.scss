@@ -39,50 +39,15 @@ div.content blockquote {
   border-left: 4px solid #ddd;
   padding: 0 0 0 20px;
   color: #777;
-  text-rendering: optimizelegibility;
 }
 
 div.content div.quotation blockquote {
   margin-left: -30px;
 }
 
-div.content center {
-  margin: 2em 0;
-  user-select: none;
-  cursor: default;
-  color: #ccc;
-}
-
-div.content pre,
-div.content code {
-  background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
-}
-
 div.content pre {
   line-height: 1.25;
   overflow-x: auto;
-  color: #333;
   padding: 16px;
 }
 
-div.content code {
-  padding: 3px 0;
-}
-div.content code::before,
-div.content code::after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-
-div.content pre > code {
-  padding:0;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-div.content pre > code::before,
-div.content pre > code::after {
-  letter-spacing: inherit;
-  content: none;
-}

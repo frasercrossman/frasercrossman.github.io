@@ -12,9 +12,13 @@
 
 html {
   height: 100%;
+  font: 16px IBMPlexSans, sans-serif;
+}
 
-  font-size: 16px;
-  font-family: IBMPlexSans, sans-serif;
+@media (max-width: 750px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -22,11 +26,10 @@ body {
   color: black;
   line-height: 1.5;
 
-  width: 100%;
-  max-width: 35em;
-
-  min-height: 100vh;
   height: 100%; /* browser support */
+  width: 100%;
+  max-width: 40em;
+  min-height: 100vh;
 
   margin: 0 auto 0 auto;
 
@@ -75,7 +78,7 @@ header, div.content, footer {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: black;
-  margin: 1em 0 1em 0;
+  margin: 0.5em 0 0.5em 0;
 }
 h1 { font-size: 28px; }
 h2 { font-size: 24px; }

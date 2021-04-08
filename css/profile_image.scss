@@ -10,6 +10,12 @@
   margin:0 1rem 0.5rem 0;
 }
 
+#profile_top_card {
+  display:inline-block;
+  float:none;
+  height:auto;
+}
+
 #profile_text {
   display:block;
   float:none;
@@ -29,5 +35,9 @@
 
   #profile_text {
     float:left;
+  }
+
+  h1 {
+    margin: 0;
   }
 }
