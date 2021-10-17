@@ -12,7 +12,7 @@
 
 html {
   height: 100%;
-  font: 16px IBMPlexSans, sans-serif;
+  font: 16px sans-serif;
 }
 
 @media (max-width: 750px) {
@@ -28,7 +28,7 @@ body {
 
   height: 100%; /* browser support */
   width: 100%;
-  max-width: 40em;
+  max-width: 45em;
   min-height: 100vh;
 
   margin: 0 auto 0 auto;
@@ -76,6 +76,7 @@ header, div.content, footer {
 
 /* headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: IBMPlexSans, sans-serif;
   font-weight: 400;
   color: black;
   margin: 0.5em 0 0.5em 0;
